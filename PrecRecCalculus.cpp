@@ -85,7 +85,7 @@ void PrecRecCalculus::calculate(){
     DistanceCalculus * c1 = new DistanceCalculus(nbrcols);
 
     FILE * fp = fopen("outsave.txt","w");
-    fprintf(fp,"Precisão média por imagem");
+    //fprintf(fp,"Precisão média por imagem");
     //selecting the target
     for( int i = 0; i < n1 ;i++){
         //scan all measures
@@ -172,7 +172,7 @@ void PrecRecCalculus::calculate(){
 
         }
 
-        fprintf(fp,"\n%.3f",pm/4);
+        fprintf(fp,"\n%.3f", p);
 //	       	fprintf(fp,"\n");
 
 //	        fprintf(fp,"\n0 1");
